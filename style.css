@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: #ffffff50;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2 {
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+}
+.navbar .logo {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.navbar {
+  background: #ffffff50;
+  color: #000;
+  height: 7rem;
+}
+
+.navbar a {
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar a:hover {
+  color: #88a54a;
+}
+
+.header {
+  background-color: #0a51cc;
+  color: white;
+  min-height: 400px;
+}
+
+.header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+.header img {
+  max-width: 400px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxes .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  flex: 1;
+  background: #0a51cc;
+  color: white;
+  border-radius: 10px;
+  margin: 20px 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+}
+.logo-image {
+  width: 7rem;
+  padding: 10px;
+}
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .boxes .container {
+    display: block;
+    text-align: center;
+  }
+}
+.hero {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.342), rgba(0, 0, 0, 0.342)),
+    url("./resources/woman1.jpg")
+      no-repeat center bottom / cover;
+  background-position: center;
+  color: whitesmoke;
+}
+
+.hero-heading {
+  padding-top: 20rem;
+  color: white;
+}
