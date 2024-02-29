@@ -110,6 +110,10 @@ ul {
 #click {
   display: none;
 }
+
+.project {
+  display: block;
+}
 @media (max-width: 768px) {
   .menu-button img {
     display: block;
@@ -155,8 +159,13 @@ ul {
   .project {
     display: none;
   }
-  .box-container {
-    margin-bottom: 200px;
+  .second {
+    display: flex;
+    flex-direction: column;
+  }
+  .box {
+    width: 300px;
+    height: 100px;
   }
 }
 .hero {
@@ -423,3 +432,8 @@ background: linear-gradient(90deg, rgba(131,133,101,1) 0%, rgba(73,59,203,1) 65%
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+.second-section {
+  height: 1200px;
+}
+
