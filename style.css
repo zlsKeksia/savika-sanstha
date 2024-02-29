@@ -163,10 +163,17 @@ ul {
     display: flex;
     flex-direction: column;
   }
+  .slider img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    padding-top: 20px;
+}
   .box {
     width: 300px;
     height: 100px;
   }
+
 }
 .hero {
   height: 50vh;
@@ -437,3 +444,51 @@ background: linear-gradient(90deg, rgba(131,133,101,1) 0%, rgba(73,59,203,1) 65%
   height: 1200px;
 }
 
+.contact-info {
+  display: block;
+}
+.slider {
+  height: 100vh; /* Make the slider container full viewport height */
+  overflow: hidden; /* Ensure images don't overflow */
+}
+.navbar {
+  position: relative; /* Add this to establish a stacking context */
+  z-index: 1000; /* Ensure the navbar appears above other elements */
+}
+
+.slider {
+  position: relative; /* Add this to establish a stacking context */
+  z-index: 1; /* Ensure the slider appears below the navbar */
+}
+
+.box-env {
+  background-color: #87A922;
+}
+.box-big-env {
+  background: rgb(131,133,101);
+background: linear-gradient(90deg, rgba(131,133,101,1) 0%, rgba(81,173,89,1) 100%, rgba(83,203,59,1) 100%, rgba(73,59,203,1) 100%, rgba(76,105,157,1) 100%);
+}
+
+.box-health {
+  background-color: #FF7ED4;
+  color: black;
+}
+.box-health-big {
+  background: rgb(131,133,101);
+background: linear-gradient(90deg, rgba(131,133,101,1) 0%, rgba(146,106,138,1) 0%, rgba(160,81,173,1) 100%, rgba(83,203,59,1) 100%, rgba(73,59,203,1) 100%, rgba(76,105,157,1) 100%, rgba(76,105,157,1) 100%);
+}
+
+.box-woman {
+  background-color: #FFE6E6;
+  color: black;
+}
+.box-woman-big {
+  background: rgb(131,133,101);
+background: linear-gradient(90deg, rgba(131,133,101,1) 0%, rgba(192,196,74,1) 100%);
+}
+
+.slider img {
+  width: 1800px;; /* Make the width 100% of the viewport width */
+  height: 1200px; /* Automatically adjust the height to maintain aspect ratio */
+  object-fit: cover; /* Ensure the images cover the entire slide */
+}

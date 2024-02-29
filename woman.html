@@ -6,6 +6,23 @@
   <link rel="stylesheet" href="./style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <title>Savika Sanstha</title>
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.slider').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000 // Adjust the speed as needed
+        });
+    });
+</script>
 </head>
 <body>
   <nav class="navbar">
@@ -23,7 +40,7 @@
         <img src="./resources/menu.png">
       </label>
       <ul class="nav">
-        <li><a href="#">Home</a></li>
+        <li><a href="./index.html">Home</a></li>
         <li><a href="./environment.html">Environment</a></li>
         <li><a href="./health.html">Health</a></li>
         <li><a href="./woman.html">Woman Empowerment</a></li>     
@@ -35,45 +52,34 @@
       </ul>
     </div>
   </nav> 
-  <header class="header hero">
-    <div class="container">
+  <header class="header-env hero-env hero-environment">
+    <div class="slider">
+    <div><img src="./resources/woman1.jpg" alt="Image 1"></div>
+    <div><img src="./resources/woman2.jpg" alt="Image 2"></div>
+</div>
+    <!-- <div class="container">
       <div>
-        <h1 class="hero-heading">Empowering Lives, <br>Bringing a Change</h1>
+        <h1 class="hero-heading heading-environment">Building Sustainable Solutions, One Community at a Time<h1>
       </div>
-    </div>
+    </div> -->
   </header>
-  <section class="box-container second-section">
+  <section class="box-container second-section box-woman-big">
     <div class="second container box-in">
-      <div class="box box-1">
-        <h2>Our Goal</h2>
-        <p>Our NGO strives to raise awareness and tackle health, education, environmental, and gender equality issues among marginalized communities.</p>
+      <div class="box box-1 box-woman">
+        <h2>Empowering Girls, Breaking Stigma</h2>
+        <p>Savika Sanstha educates girls at Bhatkya Vimukt Jamati Ashram School in Wagholi about menstruation, hygiene, and puberty, fostering confidence and open communication.</p>
       </div>
-      <div class="box box-2">
-        <h2>Our Vision</h2>
-        <p>We advocate for access to healthcare, education, and environmental conservation while promoting gender equality and providing support for those affected by family violence.
-        </p>
+      <div class="box box-2 box-woman">
+        <h2>Support Menstrual Health Awareness</h2>
+        <p>Join Savika Sanstha in breaking menstrual health taboos. Your support empowers girls to feel confident and informed.</p>
       </div>
-      <div class="box box-3">
-        <h2>Our Mission</h2>
-        <p>We envision a society where everyone has equal opportunities for a healthy, educated, and sustainable life, fostering empowered communities for positive change.</p>
-      </div>
-      <div class="box project">
-        <h2>Our Projects</h2>
-        <p>
-          <dl>
-            <dt>Environment</dt>
-            <dd>Savika Sanstha promotes sustainable practices and environmental conservation for a greener future</dd>
-            <dt>Education</dt>
-            <dd>Empowering through education, Savika Sanstha provides access to quality learning opportunities for all.</dd>
-            <dt>Women Empowerment</dt>
-            <dd>Advocating gender equality and empowerment, Savika Sanstha uplifts women and promotes inclusivity.</dd>
-            <dt>Health</dt>
-          <dd>Fostering well-being and healthcare access, Savika Sanstha ensures healthier lives for all</dd>
-          </dl>
-        </p>
+      <div class="box box-3 box-woman">
+        <h2>Impactful Girls' Workshops</h2>
+        <p>Savika Sanstha hosts workshops for girls, covering essential topics like menstruation and puberty. These sessions build confidence and knowledge. </p>
       </div>
     </div>
   </section>
+
   <section class = "contact-section" id="contact">
     <div class = "contact-bg">
       <h3>Get in Touch with Us</h3>
