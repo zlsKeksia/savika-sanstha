@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <title>Savika Sanstha</title>
+</head>
+<body>
+ <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img class='logo-image' src="./resources/logo-new.jpeg" alt="savika-logo" width="50px">
+      </div>
+      <div class="navbar-toggle menu-toggle" onclick="toggleNavbar()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-button">
+        <img src="./resources/menu.png">
+      </label>
+      <ul class="nav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./environment.html">Environment</a></li>
+        <li><a href="./health.html">Health</a></li>
+        <li><a href="./woman.html">Woman Empowerment</a></li>     
+        <!-- <li><a href="#">Education</a></li>     -->
+        <!-- <li><a href="#">Volunteers</a></li>   -->
+                <li><a href="./gallery.html">Gallery</a></li>
+
+        <li><a href="./team.html">Trustees</a></li>  
+        <!-- <li><a href="#">About</a></li> -->
+        <li id="contact-link"><a href="#contact">Contact</a></li>  
+      </ul>
+    </div>
+  </nav> 
+  <div class="full-img" id="fullImgBox">
+    <img src="resources/1. 1. WhatsApp Image 2024-03-15 at 1.51.48 PM.jpeg" id="fullImg"alt="">
+    <span onclick="closeFullImg()">X</span>
+  </div>
+  <div class="image-gallery">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/1. 1. WhatsApp Image 2024-03-15 at 1.51.48 PM.jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/2. 2. WhatsApp Image 2024-03-15 at 1.51.49 PM.jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/3. 3. WhatsApp Image 2024-03-15 at 1.51.49 PM (1).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/4. 4. WhatsApp Image 2024-03-15 at 1.51.49 PM (2).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/5. 5. WhatsApp Image 2024-03-15 at 1.51.50 PM.jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/6. 6. WhatsApp Image 2024-03-15 at 1.51.50 PM (1).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/7. 7. WhatsApp Image 2024-03-15 at 1.51.50 PM (2).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/8. 8. WhatsApp Image 2024-03-15 at 1.51.51 PM.jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/9. 9. WhatsApp Image 2024-03-15 at 1.51.51 PM (1).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/10. 10. WhatsApp Image 2024-03-15 at 1.51.51 PM (2).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/11. 11. WhatsApp Image 2024-03-15 at 1.51.52 PM.jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/12. 12. WhatsApp Image 2024-03-15 at 1.51.52 PM (1).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/13. 13. WhatsApp Image 2024-03-15 at 1.51.52 PM (2).jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/14. 14. WhatsApp Image 2024-03-15 at 1.51.53 PM.jpeg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/workers1.jpg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/workers2.jpg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/workers3.jpg" alt="">
+    <img width="600px" onclick="openFullImg(this.src)" src="resources/woman1.jpg" alt="">
+    
+    
+  </div>
+<script>
+  var fullImgBox = document.getElementById("fullImgBox");
+  var fullImg = document.getElementById("fullImg");
+  function openFullImg(pic) {
+    fullImgBox.style.display = "flex";
+    fullImg.src = pic;
+  }
+  function closeFullImg() {
+    fullImgBox.style.display = "none";
+  }
+</script>
+</body>
+</html>
