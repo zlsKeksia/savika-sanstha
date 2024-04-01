@@ -493,7 +493,7 @@ background: linear-gradient(90deg, rgba(131,133,101,1) 0%, rgba(192,196,74,1) 10
 
 .slider img {
   padding: 10px;
-  width: 1800px;; /* Make the width 100% of the viewport width */
+  width: 1920px;; /* Make the width 100% of the viewport width */
   height: 1200px; /* Automatically adjust the height to maintain aspect ratio */
   object-fit: cover; /* Ensure the images cover the entire slide */
 }
@@ -526,7 +526,7 @@ background: radial-gradient(at center, #441D84, #151641);
 }
 .team-content img{
 	width: 100%;
-	height: auto;
+	height: 200px;
 	border-radius: 15px;
 	margin-bottom: 15px;
 }
@@ -555,16 +555,7 @@ background: radial-gradient(at center, #441D84, #151641);
 	margin-bottom: 15px;
 	letter-spacing: 2px;
 }
-.icons i{
-	display: inline-block;
-	color: #fff;
-	font-size: 20px;
-	margin: 0 8px;
-	transition: all .38s ease;
-}
-.icons i:hover{
-	transform: scale(1.2);
-}
+
 .box-team:hover{
 	transform: translateY(-10px);
 	cursor: pointer;
